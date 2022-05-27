@@ -1,5 +1,5 @@
 # About
-A script to generate a folder named as your component, containing a minimalist react-typescript (.tsx) template component with its jest test file, types file, stories file (storybook.js), and styles file (react-jss).
+A script to generate a folder named as your component, containing a minimalist react-typescript (.tsx) template component with its jest test file, types file, stories file (storybook.js), and styles file (react-jss). Develop faster by creating all you need for your new component at once.
 ```
 └── my-component
     │
@@ -25,7 +25,7 @@ Execute the script on your package.json like this:
 ```
 // package.json
 ...
-  "component": "node '@tonisanchez.dev/init-component' 'YOUR_COMPONENTS_FOLDER'"
+  "component": "node node_modules/@tonisanchez.dev/init-component 'YOUR_COMPONENTS_FOLDER_DIR'",
 ...
 ```
 Everytime you call this script a new folder will be created containing 6 files:
@@ -51,7 +51,7 @@ yarn component MyComponent
 
 
 ## `subfolder`
-You can specify a subfolder with the second parameter. This is specially useful for projects that follows [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) principles. With the second optional parameter you can sepcify the level of the component represented in the scale [atoms, molecules, organisms, templates, pages].
+You can specify a subfolder with the second parameter. This is specially useful for projects that follows [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) principles. With the second optional parameter you can specify the level of the component represented in the scale [atoms, molecules, organisms, templates, pages].
 
 # Examples
 Assuming the following in your package.json

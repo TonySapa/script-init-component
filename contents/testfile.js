@@ -1,7 +1,7 @@
 const testfile = (componentName) =>
 `import React from 'react'
 import { render, screen } from '@testing-library/react'
-import ${componentName} from './component'
+import ${componentName} from './${componentName}'
 
 describe('Block of tests', () => {
   test('renders children text', () => {

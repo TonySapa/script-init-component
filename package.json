@@ -1,5 +1,9 @@
 {
+  "name": "@tonisanchez.dev/init-component",
+  "author": "Toni Sánchez (https://tonisanchez.dev)",
+  "version": "v1.0.1",
   "type": "module",
+  "private": "false",
   "scripts": {
     "component": "node index.js './src/components'"
   }

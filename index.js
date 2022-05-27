@@ -33,7 +33,7 @@ const atomicDesignLevel = process.argv[4] !== undefined
 /******************************************************************************
  * @param {string} componentsDir the directory of the component
  * @param {string} componentName the name to assign to the component
- * @param {string} atomicDesignLevel Classification according to atomic design
+ * @param {string} [atomicDesignLevel] Classification according to atomic design
  * @returns {File} folders and files containing a basic component
  *****************************************************************************/
 async function createComponent () {

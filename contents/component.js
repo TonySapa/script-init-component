@@ -1,8 +1,8 @@
 const componentFile = (componentName) =>
 `import React from 'react'
 
-import { useStyles } from './styles'
-import { ${componentName}Props } from './types'
+import { useStyles } from './${componentName}.styles'
+import { ${componentName}Props } from './${componentName}.types'
 
 const ${componentName} = ({ children }: ${componentName}Props) => {
   const classes = useStyles()
