@@ -1,7 +1,7 @@
 const stories = (componentName) => `import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import ${componentName} from '.${componentName}'
+import ${componentName} from './${componentName}'
 
 export default {
   title: 'Components/${componentName}',
