@@ -1,0 +1,11 @@
+{
+  "name": "App_Importing_the_module",
+  "author": "Toni Sánchez (https://tonisanchez.dev)",
+  "version": "v1.0.0",
+  "scripts": {
+    "component": "node './node_modules/init-component/index.js' './src/components'"
+  },
+  "dependencies": {
+    "init-component": "../../tonisanchez.dev-init-component-v1.0.4.tgz"
+  }
+}
