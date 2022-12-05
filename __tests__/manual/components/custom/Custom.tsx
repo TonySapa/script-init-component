@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 
 import { useStyles } from './Custom.styles'
 import { CustomProps } from './Custom.types'

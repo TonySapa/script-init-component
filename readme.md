@@ -1,5 +1,7 @@
 # About
+
 A script to generate a folder named as your component, containing a minimalist react-typescript (.tsx) template component with its jest test file, types file, stories file (storybook.js), and styles file (react-jss). Develop faster by creating all you need for your new component at once.
+
 ```
 └── my-component
     │
@@ -12,23 +14,30 @@ A script to generate a folder named as your component, containing a minimalist r
 ```
 
 # Installation
+
 ```
 npm i -D @tonisanchez.dev/init-component
 ```
+
 Alternatively
+
 ```
 yarn add -D @tonisanchez.dev/init-component
 ```
 
 # How it works
+
 Execute the script on your package.json like this:
+
 ```
 // package.json
 ...
-  "component": "node node_modules/@tonisanchez.dev/init-component 'YOUR_COMPONENTS_FOLDER_DIR'",
+  "component": "node node_modules/@tonisanchez.dev/init-component/src 'YOUR_COMPONENTS_FOLDER_DIR'",
 ...
 ```
+
 Everytime you call this script a new folder will be created containing 6 files:
+
 - Types file with a minimal type declaration for props.
 - Declaration of styles with a basic react-jss configuration.
 - Stories file for storybook.js code-level documentation.
@@ -39,32 +48,43 @@ Everytime you call this script a new folder will be created containing 6 files:
 Notice that the folder created containing the above files will be named after the component name you specify as first parameter. See next section.
 
 # Parameters
+
 ## `Component name`
+
 Using script as shown above, you can specify the name of your component with a following parameter as shown below:
+
 ```
 npm run component MyComponent
 ```
+
 Alternatively
+
 ```
 yarn component MyComponent
 ```
 
-
 ## `subfolder`
+
 You can specify a subfolder with the second parameter. This is specially useful for projects that follows [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) principles. With the second optional parameter you can specify the level of the component represented in the scale [atoms, molecules, organisms, templates, pages].
 
 # Examples
+
 Assuming the following in your package.json
+
 ```
 ...
   "component": "node '@tonisanchez.dev/init-component' './src/components'"
 ...
 ```
+
 And then running the script below
+
 ```
 yarn run component MyComponent organisms
 ```
+
 Will generate the next content
+
 ```
 src
 │
@@ -88,6 +108,7 @@ src
 # Default content of files generated
 
 ## [COMPONENT.tsx]
+
 ```
 import React from 'react'
 
@@ -107,6 +128,7 @@ export default MyComponent
 ```
 
 ## [COMPONENT.types.tsx]
+
 ```
 export type MyComponentProps = {
   children: string
@@ -114,6 +136,7 @@ export type MyComponentProps = {
 ```
 
 ## [COMPONENT.styles.tsx]
+
 ```
 import { createUseStyles } from 'react-jss'
 
@@ -137,6 +160,7 @@ export const useStyles = createUseStyles({
 ```
 
 ## [COMPONENT.test.tsx]
+
 ```
 import React from 'react'
 import { render, screen } from '@testing-library/react'
@@ -152,6 +176,7 @@ describe('Block of tests', () => {
 ```
 
 ## [COMPONENT.stories.tsx]
+
 ```
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
@@ -183,4 +208,5 @@ Secondary.args = {
 ```
 
 # Have fun with it
+
 I will be publishing newer versions and extend this simple and small tool. Meanwhile, I have more interesting projects on my Github [@TonySapa](https://github.com/TonySapa) or site [tonisanchez.dev](https://tonisanchez.dev)

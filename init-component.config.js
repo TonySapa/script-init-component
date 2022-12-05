@@ -1,4 +1,4 @@
-import template1 from './template1.js'
+import template from './template.js'
 const componentName = process?.argv[3]
 
 /******************************************************************************
@@ -12,13 +12,13 @@ const config = {
   defaultFiles: [
     {
       name: 'file.custom.jsx',
-      template: template1(componentName)
+      template: template(componentName),
     },
     {
       name: `${componentName}.another.js`,
-      template: template1()
-    }
-  ]
+      template: template(),
+    },
+  ],
 }
 
 export default config
