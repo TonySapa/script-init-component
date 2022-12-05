@@ -3,9 +3,9 @@
   "author": "Toni Sánchez (https://tonisanchez.dev)",
   "version": "v1.0.0",
   "scripts": {
-    "component": "node './node_modules/init-component/index.js' './src/components'"
+    "component": "node './node_modules/init-component/src/index.js' './src/components'"
   },
   "dependencies": {
-    "init-component": "../../tonisanchez.dev-init-component-v1.0.4.tgz"
+    "init-component": "../../tonisanchez.dev-init-component-v1.0.7.tgz"
   }
 }

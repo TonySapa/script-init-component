@@ -1,9 +1,14 @@
 {
   "name": "@tonisanchez.dev/init-component",
   "author": "Toni Sánchez (https://tonisanchez.dev)",
-  "version": "v1.0.2",
+  "version": "v1.0.7",
   "type": "module",
+  "files": [
+    "/package.json",
+    "/src/"
+  ],
   "scripts": {
-    "component": "node index.js './src/components'"
+    "component": "node index.js './src/components'",
+    "try": "node './src/index.js' './__tests__/manual/components'"
   }
 }

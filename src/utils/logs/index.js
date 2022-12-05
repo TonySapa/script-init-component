@@ -1,5 +1,3 @@
-import fs from 'fs'
-
 /******************************************************************************
  * @param {string} fileName name of the file, including extension.
  * @returns {void} console log with feedback message.
@@ -16,26 +14,4 @@ export const successLog = (fileName) => {
 export const errorLog = (fileName) => {
   const message = `\u001b[1;31m ✖ ${fileName} could not be generated.`
   console.log(message)
-}
-
-/******************************************************************************
- * Attempts to write a file with sepcified file name, format and content.
- * Logs successful or error messages.
- * @param {string} dir the directory where the component will be located.
- * @param {string} fileName filename of the file including extension.
- * @param {string} content content to be writen on the file.
- * @returns {void} Write a file and log if successful or not.
- *****************************************************************************/
-export const writeFile = (
-  dir,
-  fileName,
-  content
-) => {
-  try {
-    fs.writeFileSync(`${dir}/${fileName}`, content)
-    successLog(fileName)
-  } catch (err) {
-    errorLog(fileName)
-    console.log(err)
-  }
 }
